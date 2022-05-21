@@ -1,0 +1,93 @@
+.home-section{
+    background: $k1;
+    padding: 40px 0px;
+    .cont-ainer{
+        .bdg{
+            .item{
+                // width: 100vw !important;
+                .ro-w{
+                    display: flex;
+                    @media (max-width:700px) {
+                        flex-direction: column;
+                    }
+                    .dett{
+                        @media (min-width:700px) {
+                            width: 40%;
+                        }
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        .cont{
+                            margin-left: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-left: 30px;
+                            .deal{
+                                padding:5px 10px;
+                                background: $k2;
+                                width: fit-content;
+                                font-size: 14px;
+                                font-weight: 500;
+                                border-radius: 4px;
+                                margin-top: 15px;
+                                
+                            }
+                            .inf{
+                                color: $k3;
+                                font-size: 40px;
+                                font-weight: lighter;
+                                margin-top: 40px;
+                            }
+                            .inf2{
+                                color:$k3;
+                                font-size: 35px;
+                                font-weight: 400;
+                            }
+                            .dic{
+                                color: $k2;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            .act{
+                                @media (max-width:700px) {
+                                    margin-top: 50px;
+                                }
+                                margin-top: 50px;
+                                margin-bottom: 30px;
+                                padding: 14px 40px;
+                                background: $k3;
+                                border-radius: 5px;
+                                color: $k4;
+                                font-size: 14px;
+                                font-weight: 500;
+                                display: flex;
+                                transition: all ease-in-out .4s;
+                                &:hover{
+                                    background: $k2;
+                                    ;
+                                }
+                            }
+                        }
+                    }
+                    .imgs{
+                        @media (min-width:700px) {
+                            width: 60%;
+                        }
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .cont{
+                            img{
+                                width:100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

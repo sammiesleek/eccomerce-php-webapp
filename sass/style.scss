@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;502;550;600;700;800;900&display=swap');
+
+@import "includes/color";
+@import "includes/header";
+@import "includes/home";
+@import "includes/owl-custom";
+@import "includes/addons";
+
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0 ;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    width: 100vw;
+    // overflow-x: hidden;
+}
+
+.cont-ainer{
+    padding: 0px 20px;
+}
+main{
+    margin: 0 !important;
+    width: 100vw;
+    overflow-x: hidden;
+    // display: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+
+
