@@ -1,4 +1,5 @@
 #doc-header{
+    // display: none;
     background: $k1;
     color: white;
     position: relative;
@@ -158,6 +159,11 @@
            }
            .user-act{
                display:flex;
+               button{
+                   background: transparent;
+                   border: none;
+                   box-shadow: none;
+               }
             //    margin-left: auto;
                .lo-gin{
                    @media (max-width:790px) {
@@ -171,13 +177,14 @@
                    }
                }
                .shcat{
+                    color: $k3;
                    i{
                        position: relative;
                        .sup{
                            position: absolute;
                            top:-4px;
                            right: -3px;
-                           background: $k2;
+                           background: $k2 !important;
                            display: flex;
                            justify-content: center;
                            align-items: center;
@@ -192,6 +199,7 @@
                    }
                }
                .whl{
+                   color: $k3;
                    i{
                        position: relative;
                        .sup{

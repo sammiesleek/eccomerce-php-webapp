@@ -1,0 +1,21 @@
+// shopping cart modal 
+
+.modal.cart-shp{
+    background: $k2 !important;
+    padding: 0 !important;
+    .modal-dialog{
+        background: $k1;
+        top: 0 !important;
+        // height: 100vh !important;
+        right: 0 !important;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .modal-content{
+            height: 100%;
+            width:400px;
+
+        }
+    }
+}

@@ -1,0 +1,170 @@
+footer{
+    background: rgb(31,32,36);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .cont-ainer{
+        .row{
+            .item{
+                @media (max-width:999px) {
+                   margin-bottom: 30px;
+                    
+                }
+                .enc{
+                    .hd{
+                        margin-bottom: 20px;
+                        .hh{
+                            font-size: 17px;
+                            font-weight: 500;
+                            color:$k3;
+                        }
+                    }
+                    .lnk{
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            color: $k11;
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                            transition: all ease-in-out .3s;
+                            &:hover{
+                                transform: translateX(3px);
+                                color: $k2;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .i-tem{
+                // background: #666666;
+                display: flex;
+               .enc{
+                //    margin-left: auto;
+                   .hd{
+                       margin-bottom: 20px;
+                        .hh{
+                            font-size: 17px;
+                            font-weight: 500;
+                            color: $k3;
+                        }
+                   }
+                   .lnk{
+                       .ph{
+                            color: $k11;
+                            font-size: 14px;
+
+                       }
+                       .lk{
+                           margin-top: 15px;
+                           font-size: 15px;
+                           margin-bottom: 10px;
+                           display: flex;
+                           font-size:13px;
+                           img{
+                               width: 50px;
+                               margin-right: 10px;
+                           }
+                           span{
+                               display: flex;
+                               flex-direction: column;
+                               p{
+                                color: $k11;
+                            font-size: 14px;
+                               }
+                               a{
+                                   color: $k2;
+                                   font-size: 20px;
+
+                               }
+                           }
+                       }
+                       .em{
+                           color: $k11;
+                            font-size: 14px;
+                           display: block;
+                       }
+                       .adr{
+                        
+                           color: $k11;
+                            font-size: 14px;
+                           display: block;
+                           
+                       }
+
+                    }
+               } 
+            }
+
+        }
+        .row.r2{
+            padding:35px 0px;
+            margin: 30px 0px;
+            @media (min-width:999px) {
+                border-bottom: 1px solid rgba($k6,0.1);
+                border-top: 1px solid rgba($k6,0.1);
+                
+            }
+            .item{
+                @media (max-width:999px) {
+                   margin-bottom: 30px;
+                    
+                }
+                .rp{
+                    display: flex;
+                    align-items: center;
+                    // justify-content: center;
+                    i{
+                        color: $k2;
+                        font-size: 35px;
+                        margin-right: 5px;
+                        width:50px;
+
+
+                    }
+                    .rb{
+                        display: flex;
+                        flex-direction: column;
+                        h4{
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: $k3;
+                            margin-bottom: 5px;
+                        }
+                        p{
+                            font-size: 14px;
+                            color:#666666;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .ro-w{
+            display:flex ;
+            margin-top: 30px;
+            text-align: center;
+            
+           
+            .left{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                .cpy{
+                    color:$k6;
+                    a{
+                        color: $k1;
+                    }
+                }
+
+            }
+            .rgt{
+                @media (min-width:600px) {
+                     margin-left: auto;
+               
+            }
+
+            }
+        }
+    }
+}

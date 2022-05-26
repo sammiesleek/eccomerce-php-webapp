@@ -120,3 +120,33 @@
        }
     }
 }
+
+
+.products{
+
+    .owl-dots{
+        margin-top: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        button{
+            span{
+                transition: all linear .4s !important;
+                height:7px !important;
+                width: 7px !important;
+                border-radius: 50%;
+                background:rgba($k1,0.3) !important;
+            }
+        }
+        button.active{
+           span{
+               background:rgba($k3,1) !important;
+               width: 15px !important;
+               height: 15px !important;
+               display: block;
+               border-radius: 50%;
+               border: solid 3px $k1;
+           }
+        }
+    }
+}
