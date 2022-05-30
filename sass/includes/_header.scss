@@ -358,8 +358,9 @@
                    
                 }
         @media (max-width:1200px) {
-            position: absolute;
+            position: fixed;
             display: flex;
+            top: 0;
             flex-direction: column;
             background: $k3;
             left: -1000px;

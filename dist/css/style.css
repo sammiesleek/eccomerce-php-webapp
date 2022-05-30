@@ -504,10 +504,11 @@
 
 @media (max-width: 1200px) {
   #doc-header .nav3 {
-    position: absolute;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1336,12 +1337,18 @@
   position: relative;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   .top-deals .cont-ainer .head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1386,6 +1393,13 @@
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .top-deals .cont-ainer .head .right {
+    margin-left: unset;
+    margin-top: 30px;
+  }
+}
+
 .top-deals .cont-ainer .head .right .at {
   font-size: 18px;
   font-weight: 400;
@@ -1394,10 +1408,11 @@
       align-self: flex-end;
 }
 
-@media (max-width: 780px) {
-  .top-deals .cont-ainer .head .right {
-    margin-left: unset;
-    margin-top: 30px;
+@media (max-width: 600px) {
+  .top-deals .cont-ainer .head .right .at {
+    justify-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -1407,6 +1422,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1434,6 +1452,12 @@
   }
 }
 
+@media (max-width: 600px) and (max-width: 350px) {
+  .top-deals .cont-ainer .head .right .timer {
+    font-size: 10px;
+  }
+}
+
 .top-deals .cont-ainer .head .right .timer .cl {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
@@ -1454,10 +1478,24 @@
   font-size: 15px;
 }
 
+@media (max-width: 350px) {
+  .top-deals .cont-ainer .head .right .timer .cl .vrs {
+    font-size: 10px;
+    margin-left: unset;
+  }
+}
+
 .top-deals .cont-ainer .head .right .timer .ml {
   margin-left: 5px;
   font-size: 11px;
   display: block;
+}
+
+@media (max-width: 350px) {
+  .top-deals .cont-ainer .head .right .timer .ml {
+    font-size: 10px;
+    margin-left: unset;
+  }
 }
 
 .top-deals .cont-ainer .products {
@@ -1643,8 +1681,52 @@
   position: absolute;
 }
 
+.top-selling .cont-ainer .head .ctr_l2 {
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .top-selling .cont-ainer .head .ctr_l2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 700px) {
+  .top-selling .cont-ainer .head .ctr_l2 {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.top-selling .cont-ainer .head .ctr_l2 select {
+  font-size: 18px;
+  padding: 0px 2px 1px;
+}
+
+.top-selling .cont-ainer .head .ctr_l2 select:focus {
+  outline: none;
+}
+
+.top-selling .cont-ainer .head .ctr_l2 select option {
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+}
+
 .top-selling .cont-ainer .head .ctrl-bt {
   margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+  .top-selling .cont-ainer .head .ctrl-bt {
+    display: none !important;
+  }
 }
 
 @media (min-width: 700px) {
@@ -3831,6 +3913,12 @@ body {
 
 .cont-ainer {
   padding: 0px 20px;
+}
+
+@media (max-width: 400px) {
+  .cont-ainer {
+    padding: 0px 5px;
+  }
 }
 
 main {

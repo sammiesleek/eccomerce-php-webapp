@@ -6,8 +6,10 @@
     margin: 50px 0px;   
     .cont-ainer{
         .head{
-            @media (max-width:780px) {
+            @media (max-width:850px) {
                 flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
             }
             display: flex;
             width: 100%;
@@ -42,22 +44,27 @@
             }
             .right{
 
+                @media (max-width:850px ) {
+                    margin-left: unset;
+                    margin-top: 30px;
+                }
                 .at{
                     font-size: 18px;
                     font-weight: 400;
                     justify-self: flex-end;
                     align-self: flex-end;
+                    @media (max-width:600px) {
+                        justify-self: flex-start;
+                    align-self: flex-start;
+                    }
 
                 }
                 margin-left: auto;
                 display: flex;
-                @media (max-width:780px) {
-                margin-left: unset;
-                margin-top: 30px;
-
-                }
+               
                 @media (max-width:600px) {
                     flex-direction: column;
+                    justify-content: flex-start;
                 }
 
                 .at{
@@ -76,6 +83,9 @@
                     @media (max-width:600px) {
                     margin-top: 10px;
                     width: fit-content !important;
+                      @media (max-width:350px) {
+                            font-size: 10px;
+                        }
 
                     }
                     .cl{
@@ -91,12 +101,20 @@
                         margin-left: 10px;
                         display: block;
                         font-size: 15px;
+                          @media (max-width:350px) {
+                            font-size: 10px;
+                            margin-left: unset;
+                        }
                         }
                     }
                     .ml{
                         margin-left: 5px;
                         font-size: 11px;
                         display: block;
+                        @media (max-width:350px) {
+                            font-size: 10px;
+                            margin-left: unset;
+                        }
                     }
 
                 }

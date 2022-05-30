@@ -192,7 +192,7 @@ $(document).ready(()=>{
 
 $(document).ready(()=>{
 
-     //  isotope filter  recent properties
+     //  isotope filter  recent products
     var $grid= $(".grid").isotope({
         itemSelector:'.items',
         layoutMode:'fitRows'
@@ -204,5 +204,16 @@ $(document).ready(()=>{
        $(this).addClass('active')
        $grid.isotope({filter:filterValue})
       
+    })
+
+
+    var $grid = $(".grid").isotope({
+        itemSelector:'.product',
+       layoutMode:'fitRows'
+    })
+    $(".filter-selector").on('change', function()   {
+         $("#sfg .items").removeClass('off')
+        var filterValue = this.value;
+        $grid.isotope({filter:filterValue})
     })
 })
