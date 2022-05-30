@@ -22,8 +22,9 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 0px;
+    width: 5px;
     background: $k2;
+    display: none;
 }
 
 a{

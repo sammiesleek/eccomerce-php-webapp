@@ -47,7 +47,6 @@
                     </div>
                 </div>
                 <div class="modal-body">
-
                     <div class="em-cart">
                         <img src="asset/img/empcart.png" alt="">
                         <p class="p1">Your Cart Is Empty</p>
@@ -184,6 +183,42 @@
             </div>
         </div>
     </div>
+    <!-- modal wishlist  -->
+    <div class="modal cart-shp fade" id="whishlist" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="tp">
+
+                        <h5 class="modal-title" id="staticBackdropLabel">Shopping Cart</h5>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                </div>
+                <div class="modal-body">
+                    <div class="items">
+                        <div class="item">
+                            <img src="asset/img/pro1.png" alt="">
+                            <div class="det">
+                                <a href="" class="name">Bluetooth Headphones Over Ear</a>
+                                <p class="pri">$600</p>
+                            </div>
+                            <span class="rmv">
+                                <i class='bx bx-x'></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="act">
+                        <a class="acd" href="">VIEW WISHLIST</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header id="doc-header">
         <nav class="nav1">
@@ -249,10 +284,10 @@
                             <p class="l-g">My Account</p>
                         </span>
                     </div>
-                    <button class="item fav-rite whl">
+                    <button data-bs-toggle="modal" data-bs-target="#whishlist" class="item shcat item fav-rite whl">
                         <i class='bx bx-heart'>
                             <div class="sup">
-                                <p>0</p>
+                                <p>01</p>
                             </div>
                         </i>
                         <span>
@@ -304,6 +339,9 @@
             </div>
         </nav>
         <nav class="nav3">
+            <div class="close">
+                <i class='bx bx-x'></i>
+            </div>
             <div class="cont-ainer ">
                 <div class="menudrop">
                     <i class='bx bx-menu'></i>
@@ -314,7 +352,7 @@
                     <a href="">SHOP</a>
                     <a href="">PAGE</a>
                     <a href="">ABOUT</a>
-                    <a href="">CONTACT US</a>
+                    <a href="">CONTACT </a>
                 </div>
                 <span></span>
                 <div class="prom">

@@ -1,4 +1,10 @@
+$(".togler").click(()=>{
+   $(".nav3").addClass("open")
+})
 
+$(".close .bx").click(()=>{
+   $(".nav3").removeClass("open")
+})
 
 $("#homesec .owl-carousel").owlCarousel({
     loop:false,

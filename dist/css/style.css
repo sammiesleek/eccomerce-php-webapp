@@ -222,6 +222,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
 }
 
 #doc-header .nav2 .cont-ainer .user-act button {
@@ -244,6 +245,12 @@
 @media (max-width: 790px) {
   #doc-header .nav2 .cont-ainer .user-act .fav-rite {
     display: none !important;
+  }
+}
+
+@media (max-width: 450px) {
+  #doc-header .nav2 .cont-ainer .user-act .fav-rite {
+    display: none;
   }
 }
 
@@ -464,10 +471,75 @@
   background: transparent;
 }
 
+#doc-header .nav3 .close {
+  position: absolute;
+  background: #fcbe00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5px 10px 5px 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  #doc-header .nav3 .close {
+    display: none !important;
+  }
+}
+
+#doc-header .nav3 .close i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   #doc-header .nav3 {
     position: absolute;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    left: -1000px;
+    height: 100vh;
+    z-index: 10;
+    padding-top: 40px;
+    opacity: 0;
+    -webkit-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    top: 0;
+  }
+  #doc-header .nav3.open {
+    left: 0px;
+    opacity: 1;
+  }
+  #doc-header .nav3 .cont-ainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  #doc-header .nav3 .cont-ainer .menudrop {
+    display: none !important;
   }
 }
 
@@ -481,7 +553,6 @@
   height: 45%;
   margin: auto 10px;
   display: block;
-  background: black;
   width: 2px;
 }
 
@@ -529,13 +600,44 @@
   margin-left: 30px;
 }
 
+@media (max-width: 1200px) {
+  #doc-header .nav3 .cont-ainer .menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: unset;
+  }
+}
+
 #doc-header .nav3 .cont-ainer .menus a {
   margin-right: 20px;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   font-weight: 500;
   font-size: 15px;
   -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;
+}
+
+@media (max-width: 1200px) {
+  #doc-header .nav3 .cont-ainer .menus a {
+    padding: 20px 9px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: black;
+  }
 }
 
 #doc-header .nav3 .cont-ainer .menus a:hover {
@@ -3382,24 +3484,16 @@ footer .cont-ainer .ro-w .left .cpy a {
 }
 
 .modal.cart-shp {
-  background: #fcbe00 !important;
+  background: rgba(102, 102, 102, 0.2) !important;
   padding: 0 !important;
+  position: fixed;
+  height: 100vh;
 }
 
 .modal.cart-shp .modal-dialog {
-  background: #263c97;
-  top: 0 !important;
   right: 0 !important;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  top: 0;
+  position: fixed;
 }
 
 .modal.cart-shp .modal-dialog .modal-content {
@@ -3717,8 +3811,9 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
   background: #fcbe00;
+  display: none;
 }
 
 a {
