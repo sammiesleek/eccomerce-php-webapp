@@ -863,6 +863,12 @@
      object-fit: cover;
 }
 
+@media (max-width: 700px) {
+  .owl-carousel .owl-nav {
+    display: none !important;
+  }
+}
+
 @media (min-width: 820px) {
   .owl-carousel .owl-nav {
     position: absolute;
