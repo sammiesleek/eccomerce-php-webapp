@@ -764,7 +764,6 @@
 }
 
 .home-section .cont-ainer .bdg .item .ro-w .dett .cont {
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,6 +774,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 700px) {
+  .home-section .cont-ainer .bdg .item .ro-w .dett .cont {
+    margin-left: auto;
+  }
 }
 
 .home-section .cont-ainer .bdg .item .ro-w .dett .cont .deal {

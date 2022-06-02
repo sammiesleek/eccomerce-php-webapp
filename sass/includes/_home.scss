@@ -19,7 +19,10 @@
                         align-items: center;
                         text-align: left;
                         .cont{
-                            margin-left: auto;
+                            @media (min-width:700px) {
+                                
+                                margin-left: auto;
+                            }
                             display: flex;
                             flex-direction: column;
                             align-items: center;
