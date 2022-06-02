@@ -167,6 +167,52 @@
                }
             //    margin-left: auto;
                .lo-gin{
+                   cursor: pointer;
+                   &:hover{
+                       .bix{
+                           display: unset;
+                           opacity: unset;
+                       }
+                   }
+                   position: relative;
+                   .bix{
+                       display: none;
+                       opacity: 0;
+                       transition: all ease-in-out .5s;
+                       width: 200px;
+                       left: 0;
+                    //    display: none;
+                       bottom: -100px;
+                    //    transform: translateY(-100%);
+                       position: absolute;
+                       color: $k1;
+                       .in{
+                           margin-top: 15px;
+                           background:darken($k1,2%);
+                           padding: 10px;
+                           display: flex;
+                           border-radius: 3px;
+                           flex-direction: column;
+                           a{
+                               display: block;
+                               font-size: 14px;
+                               margin-bottom: 10px;
+                               color: $k3;
+                               font-weight: 500;
+                               &:last-child{
+                                   margin-bottom: 0;
+                               }
+                           }
+                           .mycct{
+                               border-radius: 3px;
+                               width: 100%;
+                               text-align: center;
+                               padding: 10px;
+                               background: $k4;
+                               color: $k2;
+                           }
+                       }
+                   }
                    @media (max-width:790px) {
                        display: none !important;
                    }
@@ -196,7 +242,10 @@
                            height: 20px;
                            border-radius: 50%;
                            p{
-                               font-size: 13px;
+                                font-size: 13px;
+                               color: $k4;
+                               font-weight: 600;
+                               margin-bottom: 2px;
                            }
                        }
 
@@ -219,6 +268,9 @@
                            border-radius: 50%;
                            p{
                                font-size: 13px;
+                               color: $k4;
+                               font-weight: 600;
+                               margin-bottom: 2px;
                            }
                        }
 
@@ -390,6 +442,8 @@
         }
         background: transparent;
         .cont-ainer{
+            padding-top:5px ;
+            padding-bottom:5px ;
             display: flex;
              span{
                 height: 45%;

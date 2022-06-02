@@ -10,6 +10,7 @@
                 flex-direction: column;
             }
             display: flex;
+            align-items: flex-start;
             width: 100%;
             padding-bottom: 6px;
             position: relative;
@@ -55,9 +56,13 @@
                 margin-top: 30px;
                 width: 100%;
                 select{
+                    border: solid 1px;
+                    @media (max-width:450px) {
+                        width: 100%;
+                    }
                     // width: 100%;
-                        font-size: 18px;
-                        padding: 0px 2px 1px;
+                        font-size: 15px;
+                        padding: 5px 10px;
                         // font-weight: 500;
 
 
@@ -66,9 +71,9 @@
                         outline: none;
                     }
                     option{
-                        display: block;
-                        white-space: nowrap;
-                        min-height: 1.2em;
+                        // display: block;
+                        // white-space: nowrap;
+                        // min-height: 1.2em;
 
                     }
                 }

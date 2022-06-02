@@ -206,7 +206,7 @@ $(document).ready(()=>{
       
     })
 
-
+    
     var $grid = $(".grid").isotope({
         itemSelector:'.product',
        layoutMode:'fitRows'
