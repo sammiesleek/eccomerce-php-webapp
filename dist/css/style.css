@@ -1228,16 +1228,23 @@
   z-index: 10;
 }
 
+@media (min-width: 800px) {
+  .mobile-n {
+    display: none;
+  }
+}
+
 .mobile-n .cont-ainer .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 20px;
 }
 
 .mobile-n .cont-ainer .box .item {
@@ -1288,7 +1295,7 @@
 }
 
 .mobile-n .cont-ainer .box .item i {
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   position: relative;
 }

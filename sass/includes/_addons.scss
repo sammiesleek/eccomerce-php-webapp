@@ -138,6 +138,9 @@
 
 
         .mobile-n{
+            @media (min-width:800px) {
+                display: none;
+            }
             position: fixed;
             bottom: 0;
             left: 0;
@@ -150,8 +153,9 @@
                 
                     .box{
                         display: flex;
-                        justify-content: space-evenly;
+                        justify-content: space-between;
                         align-items: center;
+                        padding: 0px 20px;
                         .item{
                             display: flex;
                             justify-content: center;
@@ -181,7 +185,7 @@
                                     }
                                 }
                             i{
-                                font-size:35px;
+                                font-size:30px;
                                 color:$k4;
                                 position: relative;
 
