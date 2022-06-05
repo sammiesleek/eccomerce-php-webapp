@@ -4211,6 +4211,223 @@ footer .cont-ainer .ro-w .left .cpy a {
   color: white;
 }
 
+.cart-home {
+  width: 100vw;
+  height: 300px;
+  background: linear-gradient(230deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../dist/asset/img/carbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-home .inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart-home .inf .breadcrumb .breadcrumb-item {
+  font-size: 14px;
+  color: #999999;
+}
+
+.cart-home .inf .breadcrumb .breadcrumb-item a {
+  color: #999999;
+}
+
+.cart-home .inf .breadcrumb .breadcrumb-item.act {
+  color: white;
+}
+
+.cartable {
+  margin-top: 100px;
+}
+
+.cartable .bnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartable .my-tab {
+  min-width: 700px;
+}
+
+.cartable .my-tab thead {
+  border: none !important;
+}
+
+.cartable .my-tab thead tr th {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cartable .my-tab .bdmain td {
+  position: relative;
+}
+
+.cartable .my-tab .bdmain td .ctb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cartable .my-tab .bdmain td .ct2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.cartable .my-tab .rmv .bx {
+  font-size: 25px;
+  color: #666666;
+}
+
+.cartable .my-tab .product {
+  width: 250px;
+}
+
+.cartable .my-tab .product .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px rgba(153, 153, 153, 0.1);
+  padding: 13px 0px;
+}
+
+.cartable .my-tab .product .item:last-child {
+  border-bottom: none;
+}
+
+.cartable .my-tab .product .item img {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+}
+
+.cartable .my-tab .product .item .det {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cartable .my-tab .product .item .det .name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cartable .my-tab .product .item .det .pri {
+  color: #666666;
+  font-size: 13px;
+}
+
+.cartable .my-tab .product .item .det .quat {
+  font-size: 13px;
+  color: #666666;
+}
+
+.cartable .my-tab .product .item .rmv {
+  margin-left: auto;
+}
+
+.cartable .my-tab .product .item .rmv i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cartable .my-tab .price {
+  font-weight: 500;
+}
+
+.cartable .my-tab .quantity .qbox {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartable .my-tab .quantity .qbox .bts {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartable .my-tab .quantity .qbox .bts i {
+  color: gray;
+  font-size: 20px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartable .my-tab .quantity .qbox .amt {
+  padding: 0px;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  border: none;
+  margin-left: 10px;
+}
+
+.cartable .my-tab .quantity .qbox .amt:focus {
+  outline: none;
+}
+
 body {
   position: relative;
 }

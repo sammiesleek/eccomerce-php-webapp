@@ -1,0 +1,159 @@
+.cart-home{
+    width: 100vw;
+    height: 300px;
+    background:linear-gradient(230deg, rgba(0,0,0,0.6   ), rgba(0,0,0,0.7)),  url(../../dist/asset/img/carbg.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .breadcrumb{
+            .breadcrumb-item{
+                font-size: 14px;
+                color: $k11;
+                a{
+                    color: $k11;
+                }
+                &.act{
+                    color: $k3;
+                }
+            }
+        }
+    }
+}
+.cartable{
+    margin-top: 100px;
+    .bnd{
+        display: flex;
+        // width: 2000px;
+    }
+    .my-tab{
+        min-width: 700px;
+        thead{
+            border: none !important;
+            tr{
+                th{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        }
+        .bdmain{
+            td{
+                position: relative;
+                 .ctb{
+              position: absolute;
+              top: 50%;
+              left:50%;
+              transform:translate(-50%,-50%);
+          }
+                 .ct2{
+              position: absolute;
+              top: 50%;
+            //   left:50%;
+              transform:translateY(-50%);
+          }
+            }
+        }
+        .rmv{
+         
+            .bx{
+                font-size: 25px;
+                color: $k6;
+            }
+            
+        }
+        .product{
+            width: 250px;
+             .item{
+
+                    display: flex;
+                    align-items: center;
+                    border-bottom: solid 1px rgba($k11,0.1);
+                    padding: 13px 0px;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    img{
+                        width: 65px;
+                        height: 65px;
+                        margin-right: 10px;
+                    }
+                    .det{
+                        display: flex;
+                        flex-direction: 
+                        column;
+                        // width: 150px;
+                        // margin-left: auto;
+                        .name{
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    
+                        .pri{
+                            color: $k6;
+                            font-size: 13px;
+                        }
+                        .quat{
+                            font-size: 13px;
+                            color: $k6;
+                        }
+                    }
+                    .rmv{
+                        margin-left: auto;
+                        i{
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+        }
+        .price{
+            font-weight: 500;
+        }
+        .quantity{
+            .qbox{
+                border: 1px solid #ccc;
+                padding:5px 10px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .bts{
+                    border: none;
+                    box-shadow: none;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color:lighten($k4, 50%);
+                        font-size: 20px;
+                        font-weight: 400;
+                        display: flex;
+                    }
+                }
+                .amt{
+                    padding: 0px;
+                    width:25px;
+                    height:25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 17px;
+                    border: none;
+                    margin-left: 10px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
