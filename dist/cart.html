@@ -366,9 +366,9 @@
                 <div class="togler">
                     <i class='bx bx-menu'></i>
                 </div>
-                <div class="sbrand">
+                <a href="index.html" class="sbrand">
                     <img src="asset/img/logo_200x@2x.webp" alt="">
-                </div>
+                </a>
                 <div class="search-b ">
                     <form>
                         <!-- <select class="sel-ect">
@@ -494,7 +494,7 @@
     <main id="body-main">
         <section class="cart-home">
             <div class="inf">
-                <h4>Cart</h4>
+                <h4 class="tt">Cart</h4>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="">Home</a></li>
@@ -507,7 +507,7 @@
             <div class="cont-ainer">
 
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="bnd table-responsive-md">
                             <table class="table my-tab">
                                 <thead class="table-dark">
@@ -515,19 +515,15 @@
                                         <th scope="col">Product</th>
                                         <th scope="col">Unit Price </th>
                                         <th scope="col">Quantity</th>
+                                        <th scope="col">Remove</th>
                                         <th scope="col">SubTotal </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="bdmain">
-                                        <!-- <th scope="row" class="del btn"> -->
-                                        <!-- close -->
-                                        <!-- </th> -->
-                                        <!-- <td class="rmv">
-                                        <i class=' ct2 bx bx-x'></i>
-                                    </td> -->
+                                    <tr class="bdmain item">
+
                                         <td class="product">
-                                            <div class="item">
+                                            <div class="gd">
                                                 <img src="asset/img/pro1.png" alt="">
                                                 <div class="det">
                                                     <a href="" class="name">Bluetooth Headphones Over Ear</a>
@@ -550,21 +546,857 @@
                                             </div>
 
                                         </td>
-                                        <td class=" total">
+                                        <td class=" delete">
+                                            <i class=' ct2 bx bx-x'></i>
+                                        </td>
+                                        <td class=" subtotal">
+                                            <p class="ct2">$120</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="bdmain item">
+
+                                        <td class="product">
+                                            <div class="gd">
+                                                <img src="asset/img/pro1.png" alt="">
+                                                <div class="det">
+                                                    <a href="" class="name">Bluetooth Headphones Over Ear</a>
+
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="price">
+
+                                            <p class="price ct2">$500</p>
+                                        </td>
+                                        <td class="quantity">
+
+
+                                            <div class="ct2 qbox">
+                                                <button class="bts rdc"> <i class='bx bx-minus'></i></button>
+                                                <input readonly class="amt" type="text" value="0">
+                                                <button class="bts inc"> <i class="ri-add-line"></i></button>
+                                            </div>
+
+                                        </td>
+                                        <td class=" delete">
+                                            <i class=' ct2 bx bx-x'></i>
+                                        </td>
+                                        <td class=" subtotal">
                                             <p class="ct2">$120</p>
                                         </td>
                                     </tr>
 
                                 </tbody>
+
                             </table>
                         </div>
+                        <div class="foot">
+                            <div class="tot">
+                                <h4 class="tx">Total</h4>
+                                <p class="amt">$70</p>
+                            </div>
+                            <div class="coupon">
+                                <span class="cp">Coupon Code: </span>
+                                <input class="cpcd" type="text">
+                                <input class="cpbt" type="submit" value="Apply Coupon Code">
+                            </div>
+                            <div class="nact">
+                                <a href="index.html" class="keps lk">CONTINUE SHOPPING</a>
+                                <a href="index.html" class="clear lk">EMPTY CART</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="tick col-lg-4">
+                        <div class="sumary">
+                            <div class="bx">
+                                <h4 class="h4">
+                                    Cart Totals
+                                </h4>
+                                <p class="sty">Shipping and additional costs are calculated based on the values you have
+                                    entered.
+                                </p>
 
+                                <div class="mid">
+                                    <span class="itm">
+                                        <h5 class="lt">Subtotal</h5>
+                                        <p class="amt">$5000.00</p>
+                                    </span>
+                                    <span class="itma">
+                                        <span>
+
+                                            <h5 class="lt">Shipping</h5>
+                                            <p class="amt">$5000.00</p>
+                                        </span>
+                                        <p class="stry">There are no shipping types available. Please double check your
+                                            address, or
+                                            contact us if you need any help.</p>
+                                    </span>
+                                    <span class="itm">
+                                        <h5 class="lt">Total</h5>
+                                        <p class="amt">$5000.00</p>
+                                    </span>
+                                    <a href="#" class="chekout">Checkout</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section class="top-selling">
+            <div class="cont-ainer">
+                <div class="head">
+                    <div class="left">
+                        <h4>Top Selling</h4>
+                    </div>
+                    <div class="ctr_l2">
+                        <select class=" filter-selector product-select" name="" id="">
+                            <option class="Sbtn is-checked" value=".laptop">Laptops & Computers</option>
+                            <option class="Sbtn" value=".phone">Smart Phones</option>
+                            <option class="Sbtn" value=".tab">Tablets</option>
+                        </select>
+                    </div>
+                    <div class="ctrl-bt button-group">
+                        <button class="active" data-filter=".laptop">Laptops & Computers</button>
+                        <button data-filter=".phone">Mobile Phones</button>
+                        <button data-filter=".tab">Tablets</button>
+                    </div>
+                </div>
+                <div class="products">
+
+                    <div id="sfg" class="grid ">
+                        <div class="items  laptop owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro3.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro1.png" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro2.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro4.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro5.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro6.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items off phone owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro3.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro1.png" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro2.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro4.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro5.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro6.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items off tab owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro3.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro1.png" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro2.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro4.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro5.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <div class="igm">
+                                        <img src="asset/img/pro6.jpg" alt="">
+                                    </div>
+                                    <div class="dets">
+                                        <p class="pro-name">Bluetooth Headphones Over</p>
+                                        <span class="ratins">
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                            <i class="ri-star-line"></i>
+                                        </span>
+                                        <div class="price">
+
+                                            <p class="new">$500</p>
+                                            <p class="old">$500</p>
+                                        </div>
+                                        <div class="sts-bar">
+                                            <div class="prog ">
+
+                                                <div class="bd">
+                                                    <div class="slid"></div>
+                                                </div>
+                                                <div class="ct">
+
+                                                    <span class="sd">
+                                                        Sold: 100
+                                                    </span>
+                                                    <span class="av">
+                                                        Available:40
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="ad2cart" href="#">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>

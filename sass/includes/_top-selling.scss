@@ -281,7 +281,7 @@
                             }
                             .ad2cart{
                                 padding: 10px 20px;
-                                background: $k2;
+                                background: $k1;
                                 color: $k3;
                                 display: flex;
                                 justify-content: center;
@@ -289,6 +289,7 @@
                                 border-radius: 3px;
                                 font-weight: 500;
                                 margin-top: 15px;
+                                font-size: 13px;
                                 opacity: 0;
                                 transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
                             }
