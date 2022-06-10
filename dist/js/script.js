@@ -206,7 +206,6 @@ $(document).ready(()=>{
       
     })
 
-    
     var $grid = $(".grid").isotope({
         itemSelector:'.product',
        layoutMode:'fitRows'
@@ -216,4 +215,50 @@ $(document).ready(()=>{
         var filterValue = this.value;
         $grid.isotope({filter:filterValue})
     })
+})
+
+
+
+
+$(document).ready(function(){
+    // filter for product page 
+ 
+    var $grid = $(".enclose").isotope({
+        itemSelector:'.it-em',
+       layoutMode:'fitRows'
+    })
+    $("#select").on("click" , "button", function(){
+        $(".itms").removeClass('off');
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({filter:filterValue})
+        // alert('hi')
+    })
+
+
+
+    let $btdw = $(".dec");
+    let $btup = $(".inc");
+    let $maxnum = 10;
+
+    $btup.click(function(e){
+        // alert('hi')
+        let $inp = $(`.in-put[data-id='${$(this).data("id")}']`);
+        if(  $inp.val() < $maxnum  ){
+            $inp.val(function(i,oldval){
+                return ++oldval
+            })
+        }
+    })
+    $btdw.click(function(){
+         let $inp = $(`.in-put[data-id='${$(this).data("id")}']`);
+        // alert('hi')
+        if(  $inp.val() >1   ){
+            $inp.val(function(i,oldval){
+                return --oldval
+            })
+        }
+    })
+
+
+
 })
